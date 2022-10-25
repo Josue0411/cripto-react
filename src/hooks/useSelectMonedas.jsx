@@ -16,16 +16,11 @@ const Select = styled.select`
   border-radius: 10px;
 `;
 const useSelectMonedas = (label, opciones) => {
-  const [moneda, setState] = useState("");
+  const [state, setState] = useState("");
   const SelectMonedas = () => (
     <>
       <Label htmlFor=""> {label} </Label>
-      <Select
-        value={state}
-        onChange={(e) => {
-          setState(e.target.value);
-        }}
-      >
+      <Select value={state} onChange={(e) => setState(e.target.value)}>
         <option value="">Seleccione</option>
         {opciones.map((opcion) => (
           <option key={opcion.id} value={opcion.id}>
