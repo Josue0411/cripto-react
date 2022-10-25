@@ -5,7 +5,8 @@ import { monedas } from "../data/monedas";
 const InputSubmit = styled.input`
   background-color: #a477ff;
   border: none;
-  width: 100px;
+  width: 100%;
+
   padding: 5px;
   color: #fff;
   font-weight: 700;
@@ -13,6 +14,7 @@ const InputSubmit = styled.input`
   font-size: 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin-top: 30px;
 
   &:hover {
     background-color: #c932a8;
